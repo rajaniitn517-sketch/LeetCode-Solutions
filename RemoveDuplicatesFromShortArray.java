@@ -1,0 +1,15 @@
+class Solution{
+public class RemoveDuplicatesFromShortArray {
+     if(nums.length ==0){// jb arra khali ho tb 
+            return 0;
+        }
+            int i = 0;
+            for(int j =1; j<nums.length; j++){
+                if(nums[j] != nums[i]){
+                    i++;
+                    nums[i]= nums[j];
+                }
+            }
+            return i+1;
+        }
+}
